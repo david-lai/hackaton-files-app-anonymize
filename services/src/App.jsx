@@ -4,7 +4,7 @@
 // The Minerva UI Sub-Application
 //
 import React from 'react';
-import FileServers from './components/FileServers';
+import FilesApps from './components/FilesApps';
 // Containers
 import { ModalContainer } from './containers';
 
@@ -18,7 +18,7 @@ class App extends React.Component {
     return (
       <div className="file-server-app">
         <ModalContainer />
-        <FileServers />
+        <FilesApps />
       </div>
     );
   }
