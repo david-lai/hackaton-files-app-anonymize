@@ -4,7 +4,7 @@
 // The Minerva UI Sub-Application
 //
 import React from 'react';
-import FilesApps from './components/FilesApps';
+import FilesAppAnonymize from './components/FilesAppAnonymize';
 // Containers
 import { ModalContainer } from './containers';
 
@@ -16,9 +16,9 @@ class App extends React.Component {
   render() {
     // Finally all is good, show the main app
     return (
-      <div className="file-server-app">
+      <div className="files-app-anonymize">
         <ModalContainer />
-        <FilesApps />
+        <FilesAppAnonymize />
       </div>
     );
   }
