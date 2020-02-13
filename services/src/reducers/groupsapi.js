@@ -6,7 +6,8 @@
 
 // Actions
 import {
-  FETCH_FS
+  FETCH_FS,
+  POST_ANONYMIZE
 } from '../actions/groupsapis';
 
 /**
@@ -23,6 +24,11 @@ function groupsapis(state = {}, action) {
       return {
         ...state,
         fsData: payload
+      };
+    case POST_ANONYMIZE:
+      return {
+        ...state,
+        anonymizeData: payload
       };
     default:
       return state;

@@ -11,6 +11,7 @@ import AppConstants from './../utils/AppConstants';
 // Action Types
 // ------------
 export const FETCH_FS = 'FETCH_FS';
+export const POST_ANONYMIZE = 'POST_ANONYMIZE';
 
 export const fetchFsData = () => {
   return async(dispatch) => {
@@ -42,6 +43,17 @@ export const fetchFsData = () => {
     dispatch({
       type: FETCH_FS,
       payload: resp.data
+    });
+  };
+};
+
+export const postAnonymize = (payload) => {
+  return async(dispatch) => {
+    const resp = await axios.post(AppConstants.APIS.GROUPS_API, payload);
+
+    dispatch({
+      type: POST_ANONYMIZE,
+      payload: resp
     });
   };
 };
