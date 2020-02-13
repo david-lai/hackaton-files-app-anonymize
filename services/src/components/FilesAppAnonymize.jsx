@@ -168,7 +168,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     fetchFsData: () => dispatch(fetchFsData()),
-    postAnonymize: () => dispatch(postAnonymize())
+    postAnonymize: (data) => dispatch(postAnonymize(data))
   };
 };
 

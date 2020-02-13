@@ -49,7 +49,7 @@ export const fetchFsData = () => {
 
 export const postAnonymize = (payload) => {
   return async(dispatch) => {
-    const resp = await axios.post(AppConstants.APIS.GROUPS_API, payload);
+    const resp = await axios.post(AppConstants.APIS.ANONYMIZE_API, payload);
 
     dispatch({
       type: POST_ANONYMIZE,
